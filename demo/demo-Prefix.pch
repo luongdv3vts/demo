@@ -1,0 +1,19 @@
+//
+//  demo-prefix.pch
+//  demo
+//
+//  Created by Duong Van Luong on 3/29/15.
+//  Copyright (c) 2015 Duong Van Luong. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#endif
